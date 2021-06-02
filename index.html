@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+    <title>Project JavaScript</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo"> TAD </div>
+            <div class="navitems">
+                <a id= "effect" href="#">Home</a>
+                <a id= "effect" href="#about">About-us</a>
+                <a id= "effect" href="#services">Services</a>
+                <a id= "effect" href="#screenshoot">Screenshoot</a>
+                <a id= "effect" href="#contact">Contact-us</a>
+            </div>
+            <div>
+                <img class="search" src="images/searchw.png" alt="searchBar" width="25%">
+            </div>
+    </nav>
+    <div class="parent">
+        <img id="img" class ="accueil" src="images/banniere.jpg" alt="banniere">
+        <p onclick="slideShowPrev();" class=" prev"><a class="caroussel" href="#"><</a></p>
+            <div class="parentContent">
+                <div class="content">
+                <div id="basic" class="basic">Basic template</div>
+                 <p id="paragraphe" class="para">Lorem ipsum dolor, sit consecteturamet  adipisicing elit. Excepturi alias rem cum veritatis nesciunt vel dignissimos iusto? Placeat possimus eligendi error, tempore saepe dicta id, culpa animi iste, optio laudantium.</p>
+                 <button class="read">Read more</button> 
+            </div>
+                 </div>
+                 <p onclick="slideShowNext();" class="next"><a class="caroussel" href="#">></a></p>
+     </div>
+      <div id ="about" class="aboutP">
+            <div class="titleAbout">About Information</div>
+            <div class="paraAbout"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio molestiae incidunt odio perferendis ratione explicabo pariatur totam quia autem, laborum nisi consectetur saepe alias illo quas voluptatibus dolor tempore a! </p></div>
+            <div class="imgAbout"><img src="images/col.jpg" alt="image about"></div>
+             <button class="readAbout">Read More</button>
+
+     </div>
+
+     <div class="services">
+     <div id="services" class="titleServices">Services</div>
+     
+   
+    <div class="container">
+        <div class="card-column column-0">
+          <div class="card card-color-0">
+            <div class="border"></div>
+            <img src="images/crea1.jpg" alt="image creation" />
+            <h1>Graphic Designer </h1>
+          </div>
+          <div class="card card-color-2">
+            <div class="border"></div>
+            <img src="images/paper.jpg" alt="image collaboration" />
+            <h1>Powerful Team</h1>
+          </div>
+        </div>
+        <div class="card-column column-1">
+          <div class="card card-color-1">
+            <div class="border"></div>
+            <img src="images/stud1.jpg" alt="stud image" />
+            <h1>Creation of Web Site</h1>
+          </div>
+          <div class="card card-color-3">
+            <div class="border"></div>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/deathtostock-03.jpg" alt="image hd" />
+            <h1>Get the show on, get paid</h1>
+          </div>
+         
+        </div>
+        <hr style="background-color:#224A59"/>
+      </div>
+      
+      <div id="cover" class="cover"></div>
+      
+      <div id="open-content" class="open-content">
+        <a href="#" id="close-content" class="close-content"><span class="x-1"></span><span class="x-2"></span></a>
+        <img id="open-content-image" src="" />
+        <div class="text" id="open-content-text">
+        </div>
+      
+      </div>
+     
+      <div class="flex">
+        
+        <div id="screenshoot" class="position">Screenshoot</div>
+        <div class="screenshoot">
+        <div class="itemFlex">
+          <img class="imgFlex" src="images/homme.png" alt="photo homme" width="34%" >
+           <div class="start">
+             <img src="images/etoile.png "alt="stars" width="2%"><img src="images/etoile.png" alt="stars" width="2%"><img src="images/etoile.png" alt="stars" width="2%"><img src="images/etoile.png" alt="stars" width="2%"><img src="images/etoile.png" alt="stars" width="2%">
+          </div> 
+          <p class="paraFlex">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime delectus, harum nihil odit molestias dolores ex exercitationem incidunt sit quia!orem ipsum, dolor sit amet consectetur adipisicing elit. Maxime delectus, harum nihil odit molestias dolores ex exercitationem incidunt sit quia!</p>
+        </div>
+        <div class="itemFlex">
+          <img class="imgFlex" src="images/femme2.png" alt="photo femme" width="35%">
+          <div class="start">
+            <img src="images/etoile.png "alt="stars" width="2%"><img src="images/etoile.png" alt="stars" width="2%"><img src="images/etoile.png" alt="stars" width="2%"><img src="images/etoile.png" alt="stars" width="2%">
+          </div> 
+          <p class="paraFlex">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime delectus, harum nihil odit molestias dolores ex exercitationem incidunt sit quia!orem ipsum, dolor sit amet consectetur adipisicing elit. Maxime delectus, harum nihil odit molestias dolores ex exercitationem incidunt sit quia!</p>
+        </div>
+         </div>
+        </div>
+        <div class="contact-container">
+  <div class="left-col">
+  
+  </div>
+  <div class="right-col">
+    <div class="theme-switch-wrapper">
+   
+</div class="form">
+    <div>
+    <h1 id="contact" class="titleForm">Contact us</h1>
+    <p class="paraForm">For any questions, please write us.</p>
+    
+    <form id="contact-form" method="post">
+      <label for="name">Full name</label>
+  <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+      <label for="email">Email Address</label>
+  <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+      <label for="message">Message</label>
+  <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+      <!--<a href="javascript:void(0)">--><button class="btnForm" type="submit" id="submit" name="submit">Send</button><!--</a>-->
+  
+</form>
+
+<div id="error"></div>
+<div id="success-msg"></div>
+  </div>
+  
+</div>
+
+</div>
+<footer>
+  <div class="position4">
+    <div class="footer">
+    <p> copyright&copy; </p>
+    <p><a class="foo" href="https://github.com/FAITH-ORAN" target="_blank"  style="text-decoration: none; color:white;">Powered by Faiza Berrichi</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
